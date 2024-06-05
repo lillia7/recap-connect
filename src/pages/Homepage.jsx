@@ -24,7 +24,7 @@ const Homepage = () => {
     getParticipants();
   }, [] )
   return (
-    <div className="Flex">
+    <div className="Flex" style={{overflow: 'hidden', height: '100vh'}}>
       <SideBar participants={participants} setParticipants={setParticipants}/>
       <div className='Vertical-flex' style={{width: '85%'}}>
         <GroupChat participants={participants}/>
